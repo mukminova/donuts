@@ -1,0 +1,26 @@
+$img-path: '../../img/';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'BIG JOHN';
+  src: url(../../fonts/BIGJOHN.otf);
+}
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url(../../fonts/OpenSans-Light.ttf);
+}
+
+ul li {
+  list-style: none;
+}
+
+.box {
+  max-width: 1740px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin: 0 auto;
+}

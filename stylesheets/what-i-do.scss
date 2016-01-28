@@ -1,0 +1,123 @@
+.what-i-do {
+  position: relative;
+  background: #fef9fd;
+
+  .what-i-do__scroll-bg {
+    background: url($img-path + '/scroll2.png');
+    width: 5px;
+    height: 225px;
+    top: 8px;
+    left: 50%;
+    margin-left: -2.5px;
+    position: absolute;
+  }
+
+  .what-i-do__title {
+    padding-top: 120px;
+    position: relative;
+    display: flex;
+    margin-bottom: 120px;
+
+    h1 {
+      font-family: 'BIG JOHN';
+      font-size: 70px;
+      color: #000;
+      position: relative;
+      letter-spacing: 5px;
+      display: block;
+      width: 50%;
+      text-align: right;
+      margin-right: 160px;
+
+      &:before, &:after {
+        content: '';
+        width: 483px;
+        height: 5px;
+        background: #000;
+        display: block;
+        position: absolute;
+      }
+
+      &:before {
+        right: 25px;
+        top: 93px;
+
+      }
+      &:after {
+        right: -21px;
+        top: 103px;
+      }
+    }
+
+    .what-i-do__description {
+      width: 50%;
+      font-family: 'OpenSans-Light';
+      font-size: 18px;
+      color: #000;
+    }
+
+  }
+
+  .what-i-do__examples {
+
+    .what-i-do__examples-img {
+      display: flex;
+      align-items: flex-end;
+
+      .what-i-do__headphone-bg {
+        background: url($img-path + '/headphones.png') no-repeat center 0;
+        height: 134px;
+      }
+
+      .what-i-do__screen-bg {
+        background: url($img-path + '/screen.png') no-repeat center 0;
+        height: 186px;
+      }
+
+      .what-i-do__camera-bg {
+        background: url($img-path + '/camera.png') no-repeat center 0;
+        height: 125px;
+      }
+
+      .what-i-do__headphone-bg, .what-i-do__screen-bg, .what-i-do__camera-bg {
+        position: relative;
+        flex: 1;
+
+        &:after {
+          content: '';
+          background: url($img-path + '/scroll3.png');
+          width: 5px;
+          height: 65px;
+          bottom: -108px;
+          left: 50%;
+          margin-left: -2.5px;
+          position: absolute;
+        }
+      }
+    }
+
+    .what-i-do__examples-description{
+      margin-top: 150px;
+      display: flex;
+
+      .what-i-do__headphone, .what-i-do__screen, .what-i-do__camera {
+        flex: 1;
+
+        h5 {
+          text-align: center;
+          font-family: 'BIG JOHN';
+          font-size: 18px;
+          color: #000000;
+        }
+
+        div {
+          font-family: 'OpenSans-Light';
+          font-size: 16px;
+          color: #000;
+          text-align: center;
+          padding: 25px 30px 120px;
+        }
+      }
+    }
+  }
+}

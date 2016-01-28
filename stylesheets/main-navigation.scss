@@ -1,0 +1,26 @@
+.main-navigation {
+  font-family: 'BIG JOHN';
+  font-size: 18px;
+  padding-left: 125px;
+
+  li {
+    display: inline-block;
+    margin-right: -7px;
+    padding: 15px 33px;
+
+    &.main-navigation--active {
+      background: #000000;
+      border-radius: 20px;
+
+      a {
+        color: #fdd400;
+      }
+    }
+
+    a {
+      color: #000000;
+      text-decoration: none;
+    }
+
+  }
+}

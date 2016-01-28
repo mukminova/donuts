@@ -1,0 +1,120 @@
+.about-me {
+  position: relative;
+  background: #fef9fd;
+
+  .about-me__scroll-bg {
+    background: url($img-path + '/scroll4.png');
+    width: 31px;
+    height: 225px;
+    top: 8px;
+    left: 50%;
+    margin-left: -15.5px;
+    position: absolute;
+  }
+
+  .about-me__title {
+    padding-top: 120px;
+    position: relative;
+    display: flex;
+    margin-bottom: 148px;
+
+    h1 {
+      font-family: 'BIG JOHN';
+      font-size: 70px;
+      color: #000;
+      position: relative;
+      letter-spacing: 5px;
+      display: block;
+      width: 50%;
+      text-align: right;
+      margin-right: 160px;
+
+      &:before, &:after {
+        content: '';
+        width: 483px;
+        height: 5px;
+        background: #000;
+        display: block;
+        position: absolute;
+      }
+
+      &:before {
+        right: 0px;
+        top: 93px;
+
+      }
+      &:after {
+        right: -46px;
+        right: -46px;
+        top: 103px;
+      }
+    }
+
+    .about-me__description {
+      width: 50%;
+      font-family: 'OpenSans-Light';
+      font-size: 18px;
+      color: #000;
+    }
+
+  }
+
+  .about-me__skills {
+
+    .about-me__skills-img {
+      display: flex;
+      align-items: flex-end;
+
+      .about-me__skills-ps {
+        background: url($img-path + '/about-me/skill1.png') no-repeat center 0;
+        height: 251px;
+      }
+
+      .about-me__skills-ill {
+        background: url($img-path + '/about-me/skill2.png') no-repeat center 0;
+        height: 255px;
+      }
+
+      .about-me__skills-kn {
+        background: url($img-path + '/about-me/skill3.png') no-repeat center 0;
+        height: 251px;
+      }
+
+      .about-me__skills-ps, .about-me__skills-ill, .about-me__skills-kn {
+        position: relative;
+        flex: 1;
+      }
+    }
+
+    .about-me__skills-description{
+      margin-top: 25px;
+      display: flex;
+
+      & > div {
+        flex: 1;
+
+        h1 {
+          text-align: center;
+          font-family: 'BIG JOHN';
+          font-size: 48px;
+          color: #000000;
+        }
+
+        h5 {
+          text-align: center;
+          font-family: 'BIG JOHN';
+          font-size: 18px;
+          color: #000000;
+        }
+
+        div {
+          font-family: 'OpenSans-Light';
+          font-size: 16px;
+          color: #000;
+          text-align: center;
+          padding: 25px 30px 120px;
+        }
+      }
+    }
+  }
+}

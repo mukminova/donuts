@@ -1,0 +1,114 @@
+.my-works {
+  position: relative;
+  background: #fef9fd;
+  padding-bottom: 45px;
+
+  .my-works__scroll-bg {
+    background: url($img-path + '/scroll4.png');
+    width: 31px;
+    height: 225px;
+    top: 0px;
+    left: 50%;
+    margin-left: -15.5px;
+    position: absolute;
+  }
+
+  h1 {
+    font-family: 'BIG JOHN';
+    font-size: 75px;
+    color: #000;
+    letter-spacing: 2px;
+    margin-left: 72px;
+    position: absolute;
+    left: 50%;
+    top: 113px;
+
+    &:before, &:after {
+      content: '';
+      width: 483px;
+      height: 5px;
+      background: #000;
+      display: block;
+      position: absolute;
+    }
+
+    &:before {
+      left: 5px;
+      top: 93px;
+
+    }
+    &:after {
+      left: 50px;
+      top: 103px;
+    }
+  }
+
+  .my-works__examples {
+    padding-top: 327px;
+    display: flex;
+    li {
+      flex: 1;
+      img {
+        width: 100%;
+      }
+    }
+    .my-works__examples__book {
+    }
+    .my-works__examples__alcho {
+    }
+    .my-works__examples__logo {
+    }
+    .my-works__examples__psd {
+    }
+  }
+
+  .my-works__load-btn {
+    background: none;
+    border: none;
+    margin: 70px auto 48px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    height: 52px;
+
+    span {
+      font-family: 'BIG JOHN';
+      padding: 14px 25px 12px;
+      color: #000;
+      font-size: 18px;
+      background: #fef9fd;
+      border-radius: 20px;
+      border: 4px solid #000;
+      position: relative;
+      z-index: 10;
+
+    }
+
+    &:before, &:after {
+      content: '';
+      width: 297px;
+      height: 5px;
+      background: #000;
+      display: block;
+      position: absolute;
+      z-index: 2;
+    }
+
+    &:before {
+      left: -70px;
+      top: 17px;
+
+    }
+    &:after {
+      left: -42px;
+      top: 27px;
+    }
+  }
+}
+
+
+
+
+
+
+ 

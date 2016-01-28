@@ -1,0 +1,19 @@
+{
+  "name": "donuts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp mincss",
+    "watch": "gulp watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.10.1",
+    "gulp": "^3.9.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.1.1"
+  }
+}
